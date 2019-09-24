@@ -1,0 +1,13 @@
+a=0.93;
+b=5.61;
+c=0.31;
+x=-2.5;
+k=2;
+y1=log(abs(k*x))/sin(7) -sqrt(abs(x-a*a));
+y2=-(10000*a-b)/cos(k*x)+(x-a^2)^(1/3)+c^3*x;
+y=y1+y2;
+v=[a,b,c,x,y,k,y1,y2];
+[z,idx]=max(v);
+v(2)=v(2)*idx;
+v1=sort(v);
+disp(v1);
